@@ -1,0 +1,181 @@
+.rounded-corner-btn {
+    width: 15em;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.navbar-donation {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.nav-donation-logo {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-donation-logo-text {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main-section {
+    background: url("../img/donation/annie-spratt-427340-unsplash.png");
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.overlay {
+    background: rgba(53, 68, 99, 0.4);
+}
+
+.main-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section {
+    background: #354463;
+    color: #fff;
+    width: 50%;
+    padding: 3em;
+}
+
+.form-section a {
+    color: #c1f7d5;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-heading,
+.form-text {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
+
+.main-section-message-right {
+    font-family: flood-std, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 5vw;
+    width: 30%;
+    color: #fff;
+}
+
+.form-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-flex-sub-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 45%;
+}
+
+input,
+select {
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #c1f7d5;
+    padding-bottom: 0.5em;
+    background: transparent;
+    width: 100%;
+    color: #c1f7d5;
+    font-size: 1em;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) {
+
+    .main-section .container {
+        flex-direction: column;
+    }
+
+    .main-section-message-right {
+        order: -1;
+        margin-bottom: 10vh;
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-section {
+        width: inherit;
+    }
+
+    /* /main */
+
+}
+
+/* /Tab Section  */
+
+/* Mobile Section */
+
+@media screen and (max-width: 499px) {
+
+    /* main */
+
+    .main-section .container {
+        flex-direction: column;
+    }
+
+    .main-section-message-right {
+        order: -1;
+        margin-bottom: 10vh;
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-section {
+        width: inherit;
+    }
+
+    .form-bottom {
+        flex-direction: column;
+    }
+
+    .form-link {
+        order: 1;
+        margin-top: 5vh;
+        align-self: flex-start;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.5em;
+    }
+
+    .form-heading,
+    .form-text {
+        font-size: 1.2em;
+    }
+
+    input,
+    select {
+        font-size: 0.7em;
+    }
+}
